@@ -11,13 +11,13 @@
         </a>
       </li>
       <li>
-        <a href="/category" class="{{ request()->Is('category*') ? 'active' : '' }}">
+        <a href="/pengiriman" class="{{ request()->Is('pengiriman*') ? 'active' : '' }}">
           <i class="bx bx-box"></i>
           <span class="links_name">Pengiriman</span>
         </a>
       </li>
       <li>
-        <a href="/transaction" class="{{ request()->Is('transaction*') ? 'active' : '' }}">
+        <a href="/penerimaan" class="{{ request()->Is('penerimaan*') ? 'active' : '' }}">
           <i class="bx bx-list-ul"></i>
           <span class="links_name">Penerimaan</span>
         </a>

@@ -12,18 +12,12 @@ use App\Http\Controllers\PengirimanController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('tes');
-});
 
-Route::resource('pengiriman', PengirimanController::class);
 
-Route::get('/pengiriman', [PengirimanController::class, 'index']);
-Route::get('/pengiriman/tambah', [CategoryController::class, 'create']);
-Route::post('/pengiriman/store', [CategoryController::class, 'store']);
-Route::get('/pengiriman/edit/{id}', [CategoryController::class, 'edit']);
-Route::put('/pengiriman/update/{id}', [CategoryController::class, 'update']);
-
-Route::get('/pengiriman/hapus/{id}', [CategoryController::class, 'delete']);
-Route::get('/pengiriman/destroy/{id}', [CategoryController::class, 'destroy']);
-
+Route::get('/pengiriman', [PengirimanController::class, 'index'])->name('pengiriman.index');
+Route::get('/pengiriman/create', [PengirimanController::class, 'create'])->name('pengiriman.create');
+Route::post('/pengiriman', [PengirimanController::class, 'store'])->name('pengiriman.store');
+Route::get('/pengiriman/{id_pengiriman}/edit', [PengirimanController::class, 'edit'])->name('pengiriman.edit');
+Route::put('/pengiriman/{id_pengiriman}', [PengirimanController::class, 'update'])->name('pengiriman.update');
+Route::delete('/pengiriman/{id_pengiriman}', [PengirimanController::class, 'destroy'])->name('pengiriman.destroy');
+Route::get('/pengiriman/cetak', [PengirimanController::class, 'cetak'])->name('pengiriman.cetak');

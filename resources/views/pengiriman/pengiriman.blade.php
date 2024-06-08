@@ -8,6 +8,7 @@ Pengiriman | Admin
 <div class="container">
     <h3>Pengiriman</h3>
     <a href="{{ route('pengiriman.create') }}" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="{{ route('pengiriman.cetak') }}" class="btn btn-secondary mb-3">Cetak Data</a>
     <table class="table">
         <thead>
             <tr>

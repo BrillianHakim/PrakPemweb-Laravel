@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pengiriman;
+use PDF;
 
 
 class PengirimanController extends Controller
@@ -113,4 +114,13 @@ class PengirimanController extends Controller
         $pengiriman->delete();
         return redirect('/pengiriman');
     }
+
+    public function cetak()
+    {
+        $pengiriman = Pengiriman::all();
+        $pdf = PDF::loadView('pengiriman.pengiriman-cetak', compact('pengiriman'));
+        return $pdf->download('laporan-pengiriman.pdf');
+    }
+    
+
 }
