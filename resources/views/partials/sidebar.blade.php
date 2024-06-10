@@ -5,11 +5,11 @@
     </div>
     <ul class="nav-links">
       <li>
-        <a href="#">
-          <i class="bx bx-grid-alt"></i>
-          <span class="links_name">Dashboard</span>
+        <a href="{{ route('dashboard') }}" class="{{ request()->is('/') ? 'active' : '' }}">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
         </a>
-      </li>
+    </li>
       <li>
         <a href="/pengiriman" class="{{ request()->Is('pengiriman*') ? 'active' : '' }}">
           <i class="bx bx-box"></i>

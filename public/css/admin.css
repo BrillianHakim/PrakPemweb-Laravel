@@ -1,6 +1,7 @@
 :root{
     /* Warna Logo Hakiem Delivery */
-    --orange-color: #d35400; 
+    /* --orange-color: #d35400;  */
+    --orange-color: #FF4500; 
     --primary:#b6895b;
     --bg:#010101;   
 }
@@ -56,10 +57,10 @@
 	transition: all 0.4s ease;
 }
 .sidebar .nav-links li a.active {
-	background: black;
+	background: 	black;
 }
 .sidebar .nav-links li a:hover {
-	background: #a04000;
+	background: 	#696969 ;
 }
 .sidebar .nav-links li i {
 	min-width: 60px;

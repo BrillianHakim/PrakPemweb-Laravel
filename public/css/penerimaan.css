@@ -1,0 +1,120 @@
+/* public/css/penerimaan.css */
+
+/* Gaya umum */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+/* public/css/penerimaan.css */
+
+.btn {
+    background-color:#FF4500 ; /* Dark orange */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: black; /* Darker orange on hover */
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table td {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Gaya spesifik untuk halaman penerimaan */
+.penerimaan-header {
+    margin-bottom: 20px;
+}
+
+.penerimaan-header h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.penerimaan-actions {
+    margin-bottom: 20px;
+}
+
+.penerimaan-actions .btn {
+    margin-right: 10px;
+}
+
+.penerimaan-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.penerimaan-table td {
+    text-align: center;
+}
+
+.penerimaan-table .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.penerimaan-form {
+    margin-top: 20px;
+}
+
+/* Tambahkan gaya sesuai kebutuhan Anda */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 20px; /* Menambahkan margin bawah untuk memisahkan judul dari tombol */
+}
+
+.btn-primary {
+    margin-bottom: 10px; /* Menambahkan margin bawah untuk memisahkan tombol "Tambah Data" */
+}
+
+.btn-secondary {
+    margin-bottom: 10px; /* Menambahkan margin bawah untuk memisahkan tombol "Cetak Data" */
+}
+
+.table {
+    margin-bottom: 20px; /* Menambahkan margin bawah pada tabel */
+}
